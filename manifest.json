@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Wall",
+  "description": "productivity",
+  "version": "1.00",
+  "permissions": [
+    "storage",
+    "notifications"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["dist/js/content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
